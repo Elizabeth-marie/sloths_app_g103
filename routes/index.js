@@ -1,9 +1,24 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express')
+var router = express.Router()
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/sloths', (req, res, next) => {
+  res.send({})
+})
 
-module.exports = router;
+router.get('/sloths/:id', (req, res, next) => {
+  res.send({})
+})
+
+router.post('/sloths', (req, res, next) => {
+  res.send({})
+})
+
+router.put('/sloths', (req, res, next) => {
+  res.send({})
+})
+
+router.delete('/sloths', (req, res, next) => {
+  res.send({})
+})
+
+module.exports = router
